@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinterio</title>
+    <link rel="shortcut icon" href="assets/favicon.JPG" type="image/x-icon">
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- tailwind & daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'btn-clrprimary': 'rgb(171, 239, 95)',
+                        'btn-clrsecondary': 'rgba(171, 239, 95, 0.4)',
+
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-manrope">
+    <header class="mx-auto w-full bg-gradient-to-r from-[#f3f3f3] to-[#f3f3f3]">
+        <!-- navbar start -->
+        <div class="navbar container mx-auto pt-3 md:pt-4 lg:pt-9">
+            <div class="navbar-start w-50% lg:w-[25%]">
+                <a href="index.html" class=" text-xl lg:text-4xl font-extrabold flex items-center ml-5 lg:ml-0"><span class="p-1 lg:p-2 bg-btn-clrprimary rounded-full mr-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                      </svg>
+                </span>
+                  <p>Rinterio</p></a>
+            </div>
+            <div class="navbar-center lg:ml-16 lg:flex-1 pt-[7px] hidden lg:grid">
+                <ul class="flex lg:gap-6 text-lg text-[#494949]">
+                    <li class="font-extrabold"><a href="index.html">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end w-50% lg:w-[25%]">
+                <button class="btn btn-ghost btn-circle bg-white hidden md:grid">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <button class="btn btn-ghost btn-circle bg-white ml-2 hidden md:grid">
+                    <div class="indicator">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                          </svg>
+                    </div>
+                </button>
+                <button class="flex items-center p-3 mx-3 bg-btn-clrprimary rounded-3xl invisible md:visible">
+                    <span class="text-sm lg:text-base font-semibold lg:font-extrabold">Book Consult</span> <span class=" p-1 rounded-full bg-black ml-1"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                  </svg>
+                  </span>
+                </button>
+                <!-- dropdown -->
+                <div class="dropdown lg:hidden mr-9 lg:mr-1">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle bg-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-1 shadow">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--  navbar end -->
+
+        <!-- Banner start -->
+         <div class="container mx-auto text-center pb-24">
+            <img class="mx-auto mt-5 w-[80%] md:w-[45%]" src="assets/banner.png" alt="Banner-image">
+            <h1 class="text-3xl lg:text-6xl font-extrabold py-6 leading-[40px] lg:leading-[80px] text-[#212121] px-3 md:px-0">A barn house of this design has a <br> striking appearance</h1>
+            <p class="text-base font-medium text-[#494949] mb-8 px-3 md:px-0">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+            <button class="flex items-center px-3 py-1 bg-btn-clrsecondary rounded-3xl mx-auto">
+                <span class="text-base lg:text-lg font-semibold lg:font-bold">View Details</span> <span class=" p-2 rounded-full bg-btn-clrprimary ml-1"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-black">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+              </span>
+            </button>
+         </div>
+         <!-- banner end -->
+    </header>
+
+
+</body>
+
+</html>
